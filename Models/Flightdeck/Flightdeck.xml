@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+
+	<path>flightdeck.ac</path>
+    
+    <!-- Animations - Borrowed from MD-81 due to necessity. -->
+
+<animation>
+  <type>rotate</type>
+  <object-name>LGLever</object-name>
+  <property>controls/gear/gear-down</property>
+  <interpolation>
+    <entry><ind>0</ind><dep>90</dep></entry>
+    <entry><ind>1</ind><dep> 0</dep></entry>
+  </interpolation>   
+  <center>
+    <x-m>2.175</x-m>
+    <y-m>0</y-m>
+    <z-m>0.909</z-m>
+  </center>
+  <axis>
+    <x>0</x>
+    <y>-1</y>
+    <z>0</z>
+  </axis>
+</animation> 
+<animation>
+  <type>pick</type>
+  <object-name>LGLever</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-toggle</command>
+      <property>/controls/gear/gear-down</property>
+    </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>FlapLever</object-name>
+  <property>controls/flight/flaps</property>
+  <interpolation>
+    <entry><ind>    0</ind><dep> 0</dep></entry>
+    <entry><ind>0.001</ind><dep>15</dep></entry>
+    <entry><ind>0.275</ind><dep>28</dep></entry>
+    <entry><ind>0.375</ind><dep>34</dep></entry>
+    <entry><ind>  0.7</ind><dep>47</dep></entry>
+    <entry><ind>    1</ind><dep>62</dep></entry>
+  </interpolation>   
+  <center>
+    <x-m>2.616</x-m>
+    <y-m>0</y-m>
+    <z-m>0.654</z-m>
+  </center>
+  <axis>
+    <x>0</x>
+    <y>1</y>
+    <z>0</z>
+  </axis>
+</animation> 
+
+<animation>
+  <type>pick</type>
+  <object-name>FlapLever</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>controls.flapsDown(1)</script>
+    </binding>
+    <mod-up>
+    <binding>
+      <command>nasal</command>
+      <script>controls.flapsDown(0)</script>
+    </binding>
+    </mod-up>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>FlapLever</object-name>
+  <action>
+    <button>1</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>controls.flapsDown(-1)</script>
+    </binding>
+    <mod-up>
+    <binding>
+      <command>nasal</command>
+      <script>controls.flapsDown(0)</script>
+    </binding>
+    </mod-up>
+  </action>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>ThrottleL</object-name>
+  <object-name>ThrottleRevL</object-name>
+  <property>controls/engines/engine[0]/throttle</property>
+  <interpolation>
+    <entry><ind>0</ind><dep> 0</dep></entry>
+    <entry><ind>1</ind><dep>45</dep></entry>
+  </interpolation>   
+  <center>
+    <x-m>2.616</x-m>
+    <y-m>0</y-m>
+    <z-m>0.654</z-m>
+  </center>
+  <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+<animation>
+  <type>rotate</type>
+  <object-name>ThrottleR</object-name>
+  <object-name>ThrottleRevR</object-name>
+  <property>controls/engines/engine[1]/throttle</property>
+  <interpolation>
+    <entry><ind>0</ind><dep> 0</dep></entry>
+    <entry><ind>1</ind><dep>45</dep></entry>
+  </interpolation>   
+  <center>
+    <x-m>2.616</x-m>
+    <y-m>0</y-m>
+    <z-m>0.654</z-m>
+  </center>
+  <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+
+<animation>
+  <type>pick</type>
+  <object-name>ThrottleL</object-name>
+  <object-name>ThrottleRevL</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/engines/engine[0]/throttle</property>
+      <step>0.05</step>
+      <min>0</min>
+      <max>1</max>
+      <wrap>false</wrap>
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>ThrottleL</object-name>
+  <object-name>ThrottleRevL</object-name>
+  <action>
+    <button>1</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/engines/engine[0]/throttle</property>
+      <step>-0.05</step>
+      <min>0</min>
+      <max>1</max>
+      <wrap>false</wrap>
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>ThrottleR</object-name>
+  <object-name>ThrottleRevR</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/engines/engine[1]/throttle</property>
+      <step>0.05</step>
+      <min>0</min>
+      <max>1</max>
+      <wrap>false</wrap>
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>ThrottleR</object-name>
+  <object-name>ThrottleRevR</object-name>
+  <action>
+    <button>1</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/engines/engine[1]/throttle</property>
+      <step>-0.05</step>
+      <min>0</min>
+      <max>1</max>
+      <wrap>false</wrap>
+    </binding>
+  </action>
+</animation>
+
+
+<animation>
+  <type>rotate</type>
+  <object-name>ThrottleRevL</object-name>
+  <property>surface-positions/reverser-norm[0]</property>
+  <interpolation>
+    <entry><ind>0</ind><dep> 0</dep></entry>
+    <entry><ind>1</ind><dep>90</dep></entry>
+  </interpolation>   
+  <center>
+    <x-m>2.669</x-m>
+    <y-m>0</y-m>
+    <z-m>0.836</z-m>
+  </center>
+  <axis>
+    <x>0.0</x>
+    <y>1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation> 
+<animation>
+  <type>rotate</type>
+  <object-name>ThrottleRevR</object-name>
+  <property>surface-positions/reverser-norm[1]</property>
+  <interpolation>
+    <entry><ind>0</ind><dep> 0</dep></entry>
+    <entry><ind>1</ind><dep>90</dep></entry>
+  </interpolation>   
+  <center>
+    <x-m>2.669</x-m>
+    <y-m>0</y-m>
+    <z-m>0.836</z-m>
+  </center>
+  <axis>
+    <x>0.0</x>
+    <y>1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation> 
+
+<animation>
+  <type>rotate</type>
+  <object-name>PedalL</object-name>
+  <object-name>PedalRodL</object-name>
+  <property>controls/flight/rudder</property>
+  <interpolation>
+    <entry><ind> 1</ind><dep> 10</dep></entry>
+    <entry><ind>-1</ind><dep>-10</dep></entry>
+  </interpolation>   
+  <center>
+    <x-m>2.020</x-m>
+    <y-m>0</y-m>
+    <z-m>-0.100</z-m>
+  </center>
+  <axis>
+    <x>0</x>
+    <y>1</y>
+    <z>0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>PedalR</object-name>
+  <object-name>PedalRodR</object-name>
+  <property>controls/flight/rudder</property>
+  <interpolation>
+    <entry><ind> 1</ind><dep>-10</dep></entry>
+    <entry><ind>-1</ind><dep> 10</dep></entry>
+  </interpolation>   
+  <center>
+    <x-m>2.020</x-m>
+    <y-m>0</y-m>
+    <z-m>-0.100</z-m>
+  </center>
+  <axis>
+    <x>0</x>
+    <y>1</y>
+    <z>0</z>
+  </axis>
+</animation>
+
+<!-- animation>
+  <type>select</type>
+  <object-name>YokeColL</object-name>
+  <object-name>YokeL</object-name>
+  <object-name>YokeTrimL</object-name>
+  <condition>
+    <property>/sim/yoke-visible</property>
+  </condition>
+</animation -->
+
+<!-- property>/sim/yokes-visible</property -->
+
+<animation>
+  <type>rotate</type>
+  <object-name>YokeColL</object-name>
+  <object-name>YokeL</object-name>
+  <object-name>YokeTrimL</object-name>
+  <property>controls/flight/elevator</property>
+  <factor>-12</factor>
+  <center>
+    <x-m>2.626</x-m>
+    <y-m>0.0</y-m>
+    <z-m>0.230</z-m>
+  </center>
+  <axis>
+    <x>0.0</x>
+    <y>1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>YokeL</object-name>
+  <object-name>YokeTrimL</object-name>
+  <property>controls/flight/aileron</property>
+  <factor>60</factor>
+  <center>
+    <x-m>0</x-m>
+    <y-m>-0.500</y-m>
+    <z-m>0.856</z-m>
+  </center>
+  <axis>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>YokeColR</object-name>
+  <object-name>YokeR</object-name>
+  <object-name>YokeTrimR</object-name>
+  <property>controls/flight/elevator</property>
+  <factor>-12</factor>
+  <center>
+    <x-m>2.626</x-m>
+    <y-m>0.0</y-m>
+    <z-m>0.230</z-m>
+  </center>
+  <axis>
+    <x>0.0</x>
+    <y>1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>YokeR</object-name>
+  <object-name>YokeTrimR</object-name>
+  <property>controls/flight/aileron</property>
+  <factor>60</factor>
+  <center>
+    <x-m>0.0</x-m>
+    <y-m>0.500</y-m>
+    <z-m>0.856</z-m>
+  </center>
+  <axis>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<!-- Fuel Cutoff -->
+
+<animation>
+  <type>rotate</type>
+  <object-name>FuelCutoffL</object-name>
+  <property>controls/engines/engine[0]/cutoff</property>
+  <interpolation>
+    <entry><ind>1</ind><dep> 0</dep></entry>
+    <entry><ind>0</ind><dep>42</dep></entry>
+  </interpolation>   
+  <center>
+    <x-m>2.608</x-m>
+    <y-m>0</y-m>
+    <z-m>0.630</z-m>
+  </center>
+  <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>FuelCutoffL</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-toggle</command>
+      <property>controls/engines/engine[0]/cutoff</property>
+    </binding>
+    <binding> 
+      <command>nasal</command>
+      <script>MD81.eng_startup_2(0);</script>
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>rotate</type>
+  <object-name>FuelCutoffR</object-name>
+  <property>controls/engines/engine[1]/cutoff</property>
+  <interpolation>
+    <entry><ind>1</ind><dep> 0</dep></entry>
+    <entry><ind>0</ind><dep>42</dep></entry>
+  </interpolation>   
+  <center>
+    <x-m>2.608</x-m>
+    <y-m>0</y-m>
+    <z-m>0.630</z-m>
+  </center>
+  <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>FuelCutoffR</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-toggle</command>
+      <property>controls/engines/engine[1]/cutoff</property>
+    </binding>
+    <binding> 
+      <command>nasal</command>
+      <script>MD81.eng_startup_2(1);</script>
+    </binding>
+  </action>
+</animation>
+
+<!-- Fuel X Feed -->
+
+<animation>
+  <type>rotate</type>
+  <object-name>XfeedLever</object-name>
+  <property>controls/fuel/xfeed</property>
+  <interpolation>
+    <entry><ind>0</ind><dep>  0</dep></entry>
+    <entry><ind>1</ind><dep>-45</dep></entry>
+  </interpolation>   
+  <center>
+    <x-m>2.608</x-m>
+    <y-m>0</y-m>
+    <z-m>0.630</z-m>
+  </center>
+  <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>XfeedLever</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-toggle</command>
+      <property>controls/fuel/xfeed</property>
+    </binding>
+  </action>
+</animation>
+
+<!-- Speed Brake -->
+
+<animation>
+  <type>rotate</type>
+  <object-name>SpdBrakeLever</object-name>
+  <property>controls/flight/spoilers-master</property>
+  <interpolation>
+    <entry><ind>0.0</ind><dep> 20</dep></entry>
+    <entry><ind>0.5</ind><dep>  0</dep></entry>
+    <entry><ind>1.0</ind><dep>-12</dep></entry>
+  </interpolation>   
+  <center>
+    <x-m>2.608</x-m>
+    <y-m>0</y-m>
+    <z-m>0.630</z-m>
+  </center>
+  <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+<animation>
+  <type>translate</type>
+  <object-name>SpdBrakeLever</object-name>
+  <property>controls/flight/spoilers-auto-ani</property>
+  <interpolation>
+    <entry><ind>0</ind><dep>   0</dep></entry>
+    <entry><ind>1</ind><dep>0.02</dep></entry>
+  </interpolation>
+  <axis>
+    <x>0</x>
+    <y>0</y>
+    <z>1</z>
+  </axis>
+</animation>
+
+
+
+	<model>
+		<name>AI</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/AI/ai.xml</path>
+        <offsets>
+    <x-m>2.249</x-m>
+    <y-m>-0.510</y-m>
+    <z-m>0.882</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+    	<model>
+		<name>AI-Copilot</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/AI/ai.xml</path>
+        <offsets>
+    <x-m>2.249</x-m>
+    <y-m>0.513</y-m>
+    <z-m>0.882</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+    	<model>
+		<name>HSI</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/HSI/hsi.xml</path>
+        <offsets>
+        <x-m>2.252</x-m>
+    <y-m>-0.513</y-m>
+    <z-m>0.76</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+    	<model>
+		<name>HSI-Copilot</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/HSI/hsi.xml</path>
+        <offsets>
+        <x-m>2.252</x-m>
+    <y-m>0.513</y-m>
+    <z-m>0.76</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+	<model>
+		<name>ClockL</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/Clock/clock.xml</path>
+        <offsets>
+    <x-m>2.225</x-m>
+    <y-m>-0.73</y-m>
+    <z-m>0.876</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+
+        <model>
+		<name>ClockR</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/Clock/clock.xml</path>
+        <offsets>
+    <x-m>2.225</x-m>
+    <y-m>0.29</y-m>
+    <z-m>0.876</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+
+    
+    	<model>
+		<name>ASI</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ASI/asi.xml</path>
+        <offsets>
+    <x-m>2.225</x-m>
+    <y-m>-0.62</y-m>
+    <z-m>0.876</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+    	<!-- model>
+		<name>ASIFrame</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ASI/frame.xml</path>
+        <offsets>
+    <x-m>2.225</x-m>
+    <y-m>-0.62</y-m>
+    <z-m>0.876</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model -->
+    
+    	<model>
+		<name>ASIcopilot</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ASI/asi.xml</path>
+        <offsets>
+    <x-m>2.225</x-m>
+    <y-m>0.40</y-m>
+    <z-m>0.876</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+    	<!-- model>
+		<name>ASIFramecopilot</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ASI/frame.xml</path>
+        <offsets>
+    <x-m>2.225</x-m>
+    <y-m>0.40</y-m>
+    <z-m>0.876</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model -->
+    
+    <!-- SCALING ANIMATION FOR ADF GAUGE -->
+    
+    <!-- animation>
+        <type>scale</type>
+            <object-name>ADF</object-name>
+            <object-name>ADFcopilot</object-name>
+            <x-offset>1.3</x-offset>
+            <y-offset>1.3</y-offset>
+            <z-offset>1.3</z-offset>
+    </animation -->	
+
+        <model>
+		<name>vor</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/vor/vor.xml</path>
+        <offsets>
+    <x-m>1.73</x-m>
+    <y-m>-0.475</y-m>
+    <z-m>0.61</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model> 
+    
+
+        	<model>
+		<name>ADFcopilot</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/vor/vor.xml</path>
+        <offsets>
+    <x-m>1.73</x-m>
+    <y-m>0.31</y-m>
+    <z-m>0.61</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+        	<model>
+		<name>ILS</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ILS/VOR_LOC.xml</path>
+        <offsets>
+    <x-m>2.265</x-m>
+    <y-m>-0.62</y-m>
+    <z-m>0.71</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+    	<model>
+		<name>ILScopilot</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ILS/VOR_LOC.xml</path>
+        <offsets>
+    <x-m>2.265</x-m>
+    <y-m>0.40</y-m>
+    <z-m>0.71</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+    	<!-- model>
+		<name>MastCaut</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/Ann/master-caution.xml</path>
+        <offsets>
+    <x-m>2.505</x-m>
+    <y-m>-0.43</y-m>
+    <z-m>1.175</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model -->
+
+    	<model>
+		<name>Alt-Copilot</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ALT/alt.xml</path>
+        <offsets>
+    <x-m>2.226</x-m>
+    <y-m>0.613</y-m>
+    <z-m>0.876</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    	<model>
+		<name>Alt</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ALT/alt.xml</path>
+        <offsets>
+    <x-m>2.226</x-m>
+    <y-m>-0.407</y-m>
+    <z-m>0.876</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+        	<model>
+		<name>Alt-Copilot</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ralt/ralt.xml</path>
+        <offsets>
+    <x-m>2.226</x-m>
+    <y-m>0.69</y-m>
+    <z-m>0.876</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    	<model>
+		<name>RALT</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ralt/ralt.xml</path>
+        <offsets>
+    <x-m>2.226</x-m>
+    <y-m>-0.33</y-m>
+    <z-m>0.876</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+        	<!-- model>
+		<name>VSIFramecopilot</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ASI/frame.xml</path>
+        <offsets>
+    <x-m>2.240</x-m>
+    <y-m>0.61</y-m>
+    <z-m>0.795</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+            	<model>
+		<name>VSIFramecopilot</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ASI/frame.xml</path>
+        <offsets>
+    <x-m>2.240</x-m>
+    <y-m>-0.407</y-m>
+    <z-m>0.795</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model -->
+    
+        	<model>
+		<name>VSI-Copilot</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/VSI/vsi.xml</path>
+        <offsets>
+    <x-m>2.245</x-m>
+    <y-m>0.61</y-m>
+    <z-m>0.795</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+    	<model>
+		<name>VSI</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/VSI/vsi.xml</path>
+        <offsets>
+    <x-m>2.245</x-m>
+    <y-m>-0.407</y-m>
+    <z-m>0.795</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+        	<model>
+		<name>VSI</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/TCAS/tcas.xml</path>
+        <offsets>
+    <x-m>2.26</x-m>
+    <y-m>-0.407</y-m>
+    <z-m>0.71</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+                	<!-- model>
+		<name>ADIb</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/adib/Empty/empty8.xml</path>
+        <offsets>
+    <x-m>2.22</x-m>
+    <y-m>-0.19</y-m>
+    <z-m>0.925</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model -->
+    
+        	<!-- model>
+		<name>psi1</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/PSI/psil.xml</path>
+        <offsets>
+    <x-m>2.22</x-m>
+    <y-m>-0.11</y-m>
+    <z-m>0.93</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model -->
+        	<!-- model>
+		<name>psi2</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/PSI/psir.xml</path>
+        <offsets>
+    <x-m>2.22</x-m>
+    <y-m>-0.087</y-m>
+    <z-m>0.93</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model -->
+    
+    	<!-- model>
+		<name>EPR1</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/epr/eprL.xml</path>
+        <offsets>
+    <x-m>2.21</x-m>
+    <y-m>-0.035</y-m>
+    <z-m>0.97</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model -->
+        	<!-- model>
+		<name>EPR2</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/epr/eprR.xml</path>
+        <offsets>
+    <x-m>2.21</x-m>
+    <y-m>0.035</y-m>
+    <z-m>0.97</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model -->
+    
+        	<model>
+		<name>N11</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/rpm/rpmN1L.xml</path>
+        <offsets>
+    <x-m>2.225</x-m>
+    <y-m>-0.035</y-m>
+    <z-m>0.908</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+        	<model>
+		<name>N12</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/rpm/rpmN1R.xml</path>
+        <offsets>
+    <x-m>2.225</x-m>
+    <y-m>0.035</y-m>
+    <z-m>0.908</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+            	<model>
+		<name>EGT1</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/egt/egtL.xml</path>
+        <offsets>
+    <x-m>2.24</x-m>
+    <y-m>-0.035</y-m>
+    <z-m>0.848</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+        	<model>
+		<name>EGT2</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/egt/egtR.xml</path>
+        <offsets>
+    <x-m>2.24</x-m>
+    <y-m>0.035</y-m>
+    <z-m>0.848</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+                	<model>
+		<name>N21</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/rpm2/rpmN2L.xml</path>
+        <offsets>
+    <x-m>2.247</x-m>
+    <y-m>-0.035</y-m>
+    <z-m>0.788</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+        	<model>
+		<name>N22</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/rpm2/rpmN2R.xml</path>
+        <offsets>
+    <x-m>2.247</x-m>
+    <y-m>0.035</y-m>
+    <z-m>0.788</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+                    	<model>
+		<name>N21</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/debit/debit1.xml</path>
+        <offsets>
+    <x-m>2.247</x-m>
+    <y-m>-0.095</y-m>
+    <z-m>0.788</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+        	<model>
+		<name>N22</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/debit/debit2.xml</path>
+        <offsets>
+    <x-m>2.247</x-m>
+    <y-m>0.095</y-m>
+    <z-m>0.788</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+            	<!-- model>
+		<name>N22</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/flaps/flaps.xml</path>
+        <offsets>
+    <x-m>2.247</x-m>
+    <y-m>0.15</y-m>
+    <z-m>0.788</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model -->
+    
+    
+
+    <model>
+		<name>fuelL</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/Fuel/fuel.xml</path>
+        <offsets>
+    <x-m>2.235</x-m>
+    <y-m>-0.145</y-m>
+    <z-m>0.875</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+            	<model>
+		<name>EPR2</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/oilpressure/oilpressureL.xml</path>
+        <offsets>
+    <x-m>2.21</x-m>
+    <y-m>0.11</y-m>
+    <z-m>0.97</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+                	<model>
+		<name>EPR2</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/oilpressure/oilpressureR.xml</path>
+        <offsets>
+    <x-m>2.21</x-m>
+    <y-m>0.17</y-m>
+    <z-m>0.97</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+                	<model>
+		<name>EPR2</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/oiltemp/oiltempL.xml</path>
+        <offsets>
+    <x-m>2.22</x-m>
+    <y-m>0.11</y-m>
+    <z-m>0.908</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+                	<model>
+		<name>EPR2</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/oiltemp/oiltempR.xml</path>
+        <offsets>
+    <x-m>2.22</x-m>
+    <y-m>0.17</y-m>
+    <z-m>0.908</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+    
+    <model>
+		<name>Radar</name>
+		<path>Aircraft/Instruments-3d/RDR-160/RDR-160.xml</path>
+        <offsets>
+        <x-m>2.32</x-m>
+        <y-m>0.0</y-m>
+            <z-m>0.70</z-m>
+            <pitch-deg>-50</pitch-deg>
+        </offsets>
+	</model>
+    
+        <model>
+		<name>Radar</name>
+		<path>Aircraft/Instruments-3d/cdu/boeing.xml</path>
+        <offsets>
+        <x-m>2.38</x-m>
+        <y-m>0.16</y-m>
+            <z-m>0.72</z-m>
+            <pitch-deg>-75</pitch-deg>
+        </offsets>
+	</model>
+
+
+    <!-- Radio/Autopilot Panel -->
+    
+    
+    <!-- model>
+		<name>AP1</name> 
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/AP/AP-control.xml</path>
+        <offsets>
+    <x-m>2.80</x-m>
+    <y-m>0.058</y-m>
+    <z-m>0.65</z-m>
+    <pitch-deg>-75</pitch-deg>
+        </offsets>
+	</model -->
+        
+        <!-- model>
+		<name>AP2</name> 
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/AP/at.xml</path>
+        <offsets>
+    <x-m>2.815</x-m>
+    <y-m>-0.07</y-m>
+    <z-m>0.65</z-m>
+    <pitch-deg>-75</pitch-deg>
+        </offsets>
+	</model -->  
+            <!-- model>
+		<name>AP3</name> 
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/AP/altalerter.xml</path>
+        <offsets>
+    <x-m>2.77</x-m>
+    <y-m>-0.062</y-m>
+    <z-m>0.66</z-m>
+    <pitch-deg>-75</pitch-deg>
+        </offsets>
+	</model --> 
+                     
+    <!-- model>
+		<name>Com1</name> 
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/radio/com1.xml</path>
+        <offsets>
+    <x-m>2.92</x-m>
+    <y-m>-0.061</y-m>
+    <z-m>0.62</z-m>
+    <pitch-deg>-75</pitch-deg>
+        </offsets>
+	</model -->
+            	<!-- model>
+		<name>Com2</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/radio/com2.xml</path>
+        <offsets>
+    <x-m>2.92</x-m>
+    <y-m>0.003</y-m>
+    <z-m>0.62</z-m>
+    <pitch-deg>-75</pitch-deg>
+        </offsets>
+	</model -->
+    <model>
+
+		<name>Adf1</name> 
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/radio/adf1.xml</path>
+        <offsets>
+    <x-m>2.838</x-m>
+    <y-m>-0.13</y-m>
+    <z-m>0.64</z-m>
+    <pitch-deg>-75</pitch-deg>
+        </offsets>
+	</model>
+            	<model>
+		<name>Adf2</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/radio/adf2.xml</path>
+        <offsets>
+    <x-m>2.838</x-m>
+    <y-m>0.07</y-m>
+    <z-m>0.64</z-m>
+    <pitch-deg>-75</pitch-deg>
+        </offsets>
+	</model>
+    
+                	<!-- model>
+		<name>RTrim</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/Trim/rudd.xml</path>
+        <offsets>
+    <x-m>3.08</x-m>
+    <y-m>0.00</y-m>
+    <z-m>0.563</z-m>
+    <pitch-deg>10</pitch-deg>
+        </offsets>
+	</model -->
+    
+                    	<!-- model>
+		<name>ATrim</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/Trim/aile.xml</path>
+        <offsets>
+    <x-m>3.14</x-m>
+    <y-m>0.00</y-m>
+    <z-m>0.48</z-m>
+    <pitch-deg>90</pitch-deg>
+        </offsets>
+	</model -->
+</PropertyList>

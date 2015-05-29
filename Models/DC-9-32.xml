@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+
+	<path>DC-9-32.ac</path>
+
+	<model>
+		<name>Flight deck</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Flightdeck.xml</path>
+		<offsets>
+			<z-m>0.27</z-m>
+		</offsets>
+	</model>
+
+	<model>
+		<name>Pushback</name>
+		<path>Models/Airport/Pushback/Goldhofert.xml</path>
+		<offsets>
+			<x-m>2.38</x-m>
+			<y-m>0</y-m>
+			<z-m>-2.31</z-m>
+		</offsets>
+	</model>
+
+	<!-- Ailerons -->
+	<animation>
+		<name>Left aileron</name>
+		<type>rotate</type>
+		<object-name>AileronL</object-name>
+		<property>surface-positions/left-aileron-pos-norm</property>
+		<factor>20</factor>
+		<axis>
+			<x1-m>21.201</x1-m>
+			<y1-m>-12.3</y1-m>
+			<z1-m>0.16</z1-m>
+			<x2-m>20.111</x2-m>
+			<y2-m>-8.92</y2-m>
+			<z2-m>0.019</z2-m>
+		</axis>
+	</animation>
+	<animation>
+		<name>Right aileron</name>
+		<type>rotate</type>
+		<object-name>AileronR</object-name>
+		<property>surface-positions/left-aileron-pos-norm</property>
+		<factor>20</factor>
+		<axis>
+			<x1-m>21.201</x1-m>
+			<y1-m>12.3</y1-m>
+			<z1-m>0.16</z1-m>
+			<x2-m>20.111</x2-m>
+			<y2-m>8.92</y2-m>
+			<z2-m>0.019</z2-m>
+		</axis>
+	</animation>
+
+	<!-- Elevators -->
+	<animation>
+		<name>Elevator trim</name>
+		<type>rotate</type>
+		<object-name>Hstabs</object-name>
+		<object-name>ElevatorL</object-name>
+		<object-name>ElevatorR</object-name>
+		<property>controls/flight/elevator-trim</property>
+		<interpolation>
+			<entry><ind>1</ind><dep>5</dep></entry>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>-1</ind><dep>-15</dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>33.563</x-m>
+			<y-m>0</y-m>
+			<z-m>5.991</z-m>
+		</center>
+	</animation>
+
+	<animation>
+		<name>Left elevator</name>
+		<type>rotate</type>
+		<object-name>ElevatorL</object-name>
+		<property>controls/flight/elevator</property>
+		<factor>25</factor>
+		<axis>
+			<x1-m>35.904</x1-m>
+			<y1-m>-5.677</y1-m>
+			<z1-m>5.685</z1-m>
+			<x2-m>33.405</x2-m>
+			<y2-m>-0.509</y2-m>
+			<z2-m>5.975</z2-m>
+		</axis>
+	</animation>
+	<animation>
+		<name>Right elevator</name>
+		<type>rotate</type>
+		<object-name>ElevatorR</object-name>
+		<property>controls/flight/elevator</property>
+		<factor>25</factor>
+		<axis>
+			<x1-m>33.405</x1-m>
+			<y1-m>0.509</y1-m>
+			<z1-m>5.975</z1-m>
+			<x2-m>35.904</x2-m>
+			<y2-m>5.677</y2-m>
+			<z2-m>5.685</z2-m>
+		</axis>
+	</animation>
+
+	<!-- Rudder -->
+	<animation>
+		<name>Rudder</name>
+		<type>rotate</type>
+		<object-name>Rudder</object-name>
+		<property>surface-positions/rudder-pos-norm</property>
+		<factor>20</factor>
+		<axis>
+			<x1-m>30.396</x1-m>
+			<y1-m>0</y1-m>
+			<z1-m>2.175</z1-m>
+			<x2-m>33.137</x2-m>
+			<y2-m>0</y2-m>
+			<z2-m>5.303</z2-m>
+		</axis>
+	</animation>
+
+	<!-- Flaps -->
+	<animation>
+		<name>Left flap</name>
+		<type>rotate</type>
+		<object-name>FlapL</object-name>
+		<object-name>FairingL1</object-name>
+		<object-name>FairingL2</object-name>
+		<object-name>FairingL3</object-name>
+		<object-name>FairingL4</object-name>
+		<property>surface-positions/flap-pos-norm</property>
+		<factor>50</factor>
+		<axis>
+			<x1-m>20.261</x1-m>
+			<y1-m>-8.92</y1-m>
+			<z1-m>0.012</z1-m>
+			<x2-m>18.191</x2-m>
+			<y2-m>-1.7</y2-m>
+			<z2-m>-0.303</z2-m>
+		</axis>
+	</animation>
+	<animation>
+		<name>Right flap</name>
+		<type>rotate</type>
+		<object-name>FlapR</object-name>
+		<object-name>FairingR1</object-name>
+		<object-name>FairingR2</object-name>
+		<object-name>FairingR3</object-name>
+		<object-name>FairingR4</object-name>
+		<property>surface-positions/flap-pos-norm</property>
+		<factor>50</factor>
+		<axis>
+			<x1-m>18.191</x1-m>
+			<y1-m>1.7</y1-m>
+			<z1-m>-0.303</z1-m>
+			<x2-m>20.261</x2-m>
+			<y2-m>8.92</y2-m>
+			<z2-m>0.012</z2-m>
+		</axis>
+	</animation>
+
+	<!-- Spoilers -->
+	<animation>
+		<name>Left spoilers</name>
+		<type>rotate</type>
+		<object-name>SpoilerL1</object-name>
+		<object-name>SpoilerL2</object-name>
+		<property>surface-positions/spoilers-pos-norm</property>
+		<factor>45</factor>
+		<axis>
+			<x1-m>18.459</x1-m>
+			<y1-m>-3.939</y1-m>
+			<z1-m>-0.134</z1-m>
+			<x2-m>19.713</x2-m>
+			<y2-m>-8.312</y2-m>
+			<z2-m>0.045</z2-m>
+		</axis>
+	</animation>
+	<animation>
+		<name>Right spoilers</name>
+		<type>rotate</type>
+		<object-name>SpoilerR1</object-name>
+		<object-name>SpoilerR2</object-name>
+		<property>surface-positions/spoilers-pos-norm</property>
+		<factor>45</factor>
+		<axis>
+			<x1-m>19.713</x1-m>
+			<y1-m>8.312</y1-m>
+			<z1-m>0.045</z1-m>
+			<x2-m>18.459</x2-m>
+			<y2-m>3.939</y2-m>
+			<z2-m>-0.134</z2-m>
+		</axis>
+	</animation>
+
+	<!-- Landing gears -->
+	<animation>
+		<name>Nose gear</name>
+		<type>select</type>
+		<object-name>LGNDrag</object-name>
+		<object-name>LGNStrutUp</object-name>
+		<object-name>LGNStrutLow</object-name>
+		<object-name>LGNTorqueBarUp</object-name>
+		<object-name>LGNTorqueBarLow</object-name>
+		<object-name>LGNTires</object-name>
+		<condition>
+			<greater-than>
+				<property>gear/gear[0]/position-norm</property>
+				<value>0</value>
+			</greater-than>
+		</condition>
+	</animation>
+	<animation>
+		<name>Left main gear</name>
+		<type>select</type>
+		<object-name>LGLBraceUp</object-name>
+		<object-name>LGLBraceLow</object-name>
+		<object-name>LGLStrutUp</object-name>
+		<object-name>LGLStrutLow</object-name>
+		<object-name>LGLTorqueBarUp</object-name>
+		<object-name>LGLTorqueBarLow</object-name>
+		<object-name>LGLTires</object-name>
+		<condition>
+			<greater-than>
+				<property>gear/gear[1]/position-norm</property>
+				<value>0</value>
+			</greater-than>
+		</condition>
+	</animation>
+	<animation>
+		<name>Right main gear</name>
+		<type>select</type>
+		<object-name>LGRBraceUp</object-name>
+		<object-name>LGRBraceLow</object-name>
+		<object-name>LGRStrutUp</object-name>
+		<object-name>LGRStrutLow</object-name>
+		<object-name>LGRTorqueBarUp</object-name>
+		<object-name>LGRTorqueBarLow</object-name>
+		<object-name>LGRTires</object-name>
+		<condition>
+			<greater-than>
+				<property>gear/gear[2]/position-norm</property>
+				<value>0</value>
+			</greater-than>
+		</condition>
+	</animation>
+
+	<!-- Reverse thrust -->
+	<animation>
+		<name>Left reverse thrust translate</name>
+		<type>translate</type>
+		<object-name>EngineLReverserUp</object-name>
+		<object-name>EngineLReverserDown</object-name>
+		<property>surface-positions/left-reverser-pos-norm</property>
+		<factor>0.6</factor>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+		<name>Left reverse thrust up rotate</name>
+		<type>rotate</type>
+		<object-name>EngineLReverserUp</object-name>
+		<property>surface-positions/left-reverser-pos-norm</property>
+		<factor>76</factor>
+		<axis>
+			<x1-m>28.143</x1-m>
+			<y1-m>-3.278</y1-m>
+			<z1-m>0.853</z1-m>
+			<x2-m>28.137</x2-m>
+			<y2-m>-2.384</y2-m>
+			<z2-m>0.676</z2-m>
+		</axis>
+	</animation>
+	<animation>
+		<name>Left reverse thrust down rotate</name>
+		<type>rotate</type>
+		<object-name>EngineLReverserDown</object-name>
+		<property>surface-positions/left-reverser-pos-norm</property>
+		<factor>76</factor>
+		<axis>
+			<x1-m>28.137</x1-m>
+			<y1-m>-2.384</y1-m>
+			<z1-m>0.676</z1-m>
+			<x2-m>28.143</x2-m>
+			<y2-m>-3.278</y2-m>
+			<z2-m>0.853</z2-m>
+		</axis>
+	</animation>
+
+	<animation>
+		<name>Right reverse thrust translate</name>
+		<type>translate</type>
+		<object-name>EngineRReverserUp</object-name>
+		<object-name>EngineRReverserDown</object-name>
+		<property>surface-positions/right-reverser-pos-norm</property>
+		<factor>0.6</factor>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+		<name>Right reverse thrust up rotate</name>
+		<type>rotate</type>
+		<object-name>EngineRReverserUp</object-name>
+		<property>surface-positions/right-reverser-pos-norm</property>
+		<factor>76</factor>
+		<axis>
+			<x1-m>28.137</x1-m>
+			<y1-m>2.384</y1-m>
+			<z1-m>0.676</z1-m>
+			<x2-m>28.143</x2-m>
+			<y2-m>3.278</y2-m>
+			<z2-m>0.853</z2-m>
+		</axis>
+	</animation>
+	<animation>
+		<name>Right reverse thrust down rotate</name>
+		<type>rotate</type>
+		<object-name>EngineRReverserDown</object-name>
+		<property>surface-positions/right-reverser-pos-norm</property>
+		<factor>76</factor>
+		<axis>
+			<x1-m>28.143</x1-m>
+			<y1-m>3.278</y1-m>
+			<z1-m>0.853</z1-m>
+			<x2-m>28.137</x2-m>
+			<y2-m>2.384</y2-m>
+			<z2-m>0.676</z2-m>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>Fuselage</object-name>
+		<object-name>EngineL</object-name>
+		<object-name>EngineR</object-name>
+		<property-base>sim/model/livery</property-base>
+		<texture-prop>texture</texture-prop>
+		<texture>DAL.png</texture>
+	</animation>
+
+    <!--
+    <animation>
+        <type>shader</type>
+        <shader>chrome</shader>
+        <texture>chrome1.png</texture>
+    <object-name>EngRevFrameL</object-name>
+    <object-name>EngRevFrameR</object-name>
+    <object-name>EngRevStrutADL</object-name>
+    <object-name>EngRevStrutADR</object-name>
+    <object-name>EngRevStrutAVL</object-name>
+    <object-name>EngRevStrutAVR</object-name>
+    <object-name>EngRevStrutFDL</object-name>
+    <object-name>EngRevStrutFDR</object-name>
+    <object-name>EngRevStrutFVL</object-name>
+    <object-name>EngRevStrutFVR</object-name>
+    <object-name>EngineLReverserDown</object-name>
+    <object-name>EngineRReverserDown</object-name>
+    <object-name>EngineLReverserUp</object-name>
+    <object-name>EngineRReverserUp</object-name>
+    </animation>
+    -->
+    
+	<nasal>
+		<load>
+		 var livery_update = aircraft.livery_update.new("Aircraft/DC-9-32/Models/Liveries");
+		</load>
+		<unload>
+		 livery_update.stop();
+		</unload>
+	</nasal>
+
+</PropertyList>

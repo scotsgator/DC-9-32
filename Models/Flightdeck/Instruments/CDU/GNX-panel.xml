@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <name>CDU 2d Panel</name>
+    <background>Aircraft/dc8-73/Models/Instruments/CDU/transparent.png</background>
+    <w>320</w>
+    <h>256</h>
+
+    <instruments>
+
+        <instrument include="flightplan.xml">
+            <name>FP</name>
+            <condition>
+                <greater-than>
+                    <property>consumables/fuel/tank/density-ppg</property>
+                    <value>0</value>
+                </greater-than>
+            </condition>
+            <x>128</x>
+            <y>128</y>
+            <w>256</w>
+            <h>256</h>
+        </instrument>
+
+    </instruments>
+</PropertyList>
