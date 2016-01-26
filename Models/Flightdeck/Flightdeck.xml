@@ -4,7 +4,7 @@
 
 	<path>flightdeck.ac</path>
     
-    <!-- Animations - Borrowed from MD-81 due to necessity. -->
+    <!-- Animations - Borrowed from MD-88 due to necessity. -->
 
 <animation>
   <type>rotate</type>
@@ -291,18 +291,6 @@
     <z>0</z>
   </axis>
 </animation>
-
-<!-- animation>
-  <type>select</type>
-  <object-name>YokeColL</object-name>
-  <object-name>YokeL</object-name>
-  <object-name>YokeTrimL</object-name>
-  <condition>
-    <property>/sim/yoke-visible</property>
-  </condition>
-</animation -->
-
-<!-- property>/sim/yokes-visible</property -->
 
 <animation>
   <type>rotate</type>
@@ -603,17 +591,6 @@
         </offsets>
 	</model>
     
-    	<!-- model>
-		<name>ASIFrame</name>
-		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ASI/frame.xml</path>
-        <offsets>
-    <x-m>2.225</x-m>
-    <y-m>-0.62</y-m>
-    <z-m>0.876</z-m>
-    <pitch-deg>-12</pitch-deg>
-        </offsets>
-	</model -->
-    
     	<model>
 		<name>ASIcopilot</name>
 		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ASI/asi.xml</path>
@@ -624,28 +601,6 @@
     <pitch-deg>-12</pitch-deg>
         </offsets>
 	</model>
-    
-    	<!-- model>
-		<name>ASIFramecopilot</name>
-		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ASI/frame.xml</path>
-        <offsets>
-    <x-m>2.225</x-m>
-    <y-m>0.40</y-m>
-    <z-m>0.876</z-m>
-    <pitch-deg>-12</pitch-deg>
-        </offsets>
-	</model -->
-    
-    <!-- SCALING ANIMATION FOR ADF GAUGE -->
-    
-    <!-- animation>
-        <type>scale</type>
-            <object-name>ADF</object-name>
-            <object-name>ADFcopilot</object-name>
-            <x-offset>1.3</x-offset>
-            <y-offset>1.3</y-offset>
-            <z-offset>1.3</z-offset>
-    </animation -->	
 
         <model>
 		<name>vor</name>
@@ -691,17 +646,6 @@
     <pitch-deg>-12</pitch-deg>
         </offsets>
 	</model>
-    
-    	<!-- model>
-		<name>MastCaut</name>
-		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/Ann/master-caution.xml</path>
-        <offsets>
-    <x-m>2.505</x-m>
-    <y-m>-0.43</y-m>
-    <z-m>1.175</z-m>
-    <pitch-deg>-12</pitch-deg>
-        </offsets>
-	</model -->
 
     	<model>
 		<name>Alt-Copilot</name>
@@ -745,28 +689,6 @@
         </offsets>
 	</model>
     
-        	<!-- model>
-		<name>VSIFramecopilot</name>
-		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ASI/frame.xml</path>
-        <offsets>
-    <x-m>2.240</x-m>
-    <y-m>0.61</y-m>
-    <z-m>0.795</z-m>
-    <pitch-deg>-12</pitch-deg>
-        </offsets>
-	</model>
-    
-            	<model>
-		<name>VSIFramecopilot</name>
-		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ASI/frame.xml</path>
-        <offsets>
-    <x-m>2.240</x-m>
-    <y-m>-0.407</y-m>
-    <z-m>0.795</z-m>
-    <pitch-deg>-12</pitch-deg>
-        </offsets>
-	</model -->
-    
         	<model>
 		<name>VSI-Copilot</name>
 		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/VSI/vsi.xml</path>
@@ -790,7 +712,7 @@
 	</model>
     
         	<model>
-		<name>VSI</name>
+		<name>TCAS</name>
 		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/TCAS/tcas.xml</path>
         <offsets>
     <x-m>2.26</x-m>
@@ -799,59 +721,6 @@
     <pitch-deg>-12</pitch-deg>
         </offsets>
 	</model>
-    
-                	<!-- model>
-		<name>ADIb</name>
-		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/adib/Empty/empty8.xml</path>
-        <offsets>
-    <x-m>2.22</x-m>
-    <y-m>-0.19</y-m>
-    <z-m>0.925</z-m>
-    <pitch-deg>-12</pitch-deg>
-        </offsets>
-	</model -->
-    
-        	<!-- model>
-		<name>psi1</name>
-		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/PSI/psil.xml</path>
-        <offsets>
-    <x-m>2.22</x-m>
-    <y-m>-0.11</y-m>
-    <z-m>0.93</z-m>
-    <pitch-deg>-12</pitch-deg>
-        </offsets>
-	</model -->
-        	<!-- model>
-		<name>psi2</name>
-		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/PSI/psir.xml</path>
-        <offsets>
-    <x-m>2.22</x-m>
-    <y-m>-0.087</y-m>
-    <z-m>0.93</z-m>
-    <pitch-deg>-12</pitch-deg>
-        </offsets>
-	</model -->
-    
-    	<!-- model>
-		<name>EPR1</name>
-		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/epr/eprL.xml</path>
-        <offsets>
-    <x-m>2.21</x-m>
-    <y-m>-0.035</y-m>
-    <z-m>0.97</z-m>
-    <pitch-deg>-12</pitch-deg>
-        </offsets>
-	</model -->
-        	<!-- model>
-		<name>EPR2</name>
-		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/epr/eprR.xml</path>
-        <offsets>
-    <x-m>2.21</x-m>
-    <y-m>0.035</y-m>
-    <z-m>0.97</z-m>
-    <pitch-deg>-12</pitch-deg>
-        </offsets>
-	</model -->
     
         	<model>
 		<name>N11</name>
@@ -914,20 +783,9 @@
     <pitch-deg>-12</pitch-deg>
         </offsets>
 	</model>
-    
-                    	<model>
-		<name>N21</name>
-		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/debit/debit1.xml</path>
-        <offsets>
-    <x-m>2.247</x-m>
-    <y-m>-0.095</y-m>
-    <z-m>0.788</z-m>
-    <pitch-deg>-12</pitch-deg>
-        </offsets>
-	</model>
-        	<model>
-		<name>N22</name>
-		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/debit/debit2.xml</path>
+    <model>
+		<name>Flaps</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/Flaps/flaps.xml</path>
         <offsets>
     <x-m>2.247</x-m>
     <y-m>0.095</y-m>
@@ -935,18 +793,6 @@
     <pitch-deg>-12</pitch-deg>
         </offsets>
 	</model>
-    
-            	<!-- model>
-		<name>N22</name>
-		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/flaps/flaps.xml</path>
-        <offsets>
-    <x-m>2.247</x-m>
-    <y-m>0.15</y-m>
-    <z-m>0.788</z-m>
-    <pitch-deg>-12</pitch-deg>
-        </offsets>
-	</model -->
-    
     
 
     <model>

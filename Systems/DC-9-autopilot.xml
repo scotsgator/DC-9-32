@@ -251,7 +251,7 @@
 			<prop>/instrumentation/nav[0]/gs-rate-of-climb</prop>
 		</reference>
 		<output>
-			<prop>/controls/flight/elevator-trim</prop>
+			<prop>/controls/flight/elevator</prop>
 		</output>
 		<config>
 			<Kp>-0.0075</Kp>
@@ -303,7 +303,7 @@
 			<prop>/autopilot/internal/target-climb-rate-fps</prop>
 		</reference>
 		<output>
-			<prop>/controls/flight/elevator-trim</prop>
+			<prop>/controls/flight/elevator</prop>
 		</output>
 		<config>
 			<Kp>-0.01</Kp>
@@ -333,7 +333,7 @@
 			<scale>0.01667</scale>
 		</reference>
 		<output>
-			<prop>/controls/flight/elevator-trim</prop>
+			<prop>/controls/flight/elevator</prop>
 		</output>
 		<config>
 			<Kp>-0.0025</Kp>

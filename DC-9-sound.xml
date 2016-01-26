@@ -4,7 +4,7 @@
 
   <fx>
 
-    <engine>
+    <engine0>
       <name>whine</name>
       <path>Aircraft/DC-9-32/Sounds/running.wav</path>
       <mode>looped</mode>
@@ -23,9 +23,8 @@
       </pitch>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
-    </engine>
-
-    <engine>
+    </engine0>
+	<engine1>
       <name>whine</name>
       <path>Aircraft/DC-9-32/Sounds/running.wav</path>
       <mode>looped</mode>
@@ -44,8 +43,7 @@
       </pitch>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
-    </engine>
-
+    </engine1>
     <rumble>
       <name>rumble</name>
       <mode>looped</mode>

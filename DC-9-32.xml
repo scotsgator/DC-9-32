@@ -11,8 +11,8 @@
  http://www.airliners.net/aircraft-data/stats.main?id=276
 -->
 
-<airplane mass="57190">
-	<approach speed="130" aoa="5.0" fuel="0.2">
+<airplane mass="67190">
+	<approach speed="140" aoa="5.0" fuel="0.2">
 		<control-setting axis="/controls/engines/engine[0]/throttle-lever" value="0.5" />
 		<control-setting axis="/controls/engines/engine[1]/throttle-lever" value="0.5" />
 		<control-setting axis="/controls/flight/flaps" value="1.0" />
