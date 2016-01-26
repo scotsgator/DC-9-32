@@ -4,7 +4,7 @@
 
 	<sim>
 		<description>Douglas DC-9-32</description>
-		<author>Gary Neely (3d), Skyop (FDM, systems, etc.), Thomas Ito-Haigh</author>
+		<author>Lester Buffo, Joshua Davidson (it0uchpods, 411)</author>
 		<status>alpha</status>
 		<flight-model>yasim</flight-model>
 		<aero>DC-9-32</aero>
@@ -19,7 +19,9 @@
 		<startup>
 			<splash-texture>Aircraft/DC-9-32/splash.png</splash-texture>
 		</startup>
-
+		<instrumentation>
+			<path>Aircraft/DC-9-32/Systems/instrumentation.xml</path>
+		</instrumentation>
 		<systems>
 			<autopilot>
 				<name>Autopilot</name>
@@ -30,7 +32,7 @@
 		<sound>
 			<path>Aircraft/DC-9-32/DC-9-sound.xml</path>
 		</sound>
-
+		<instrumentation include="Systems/init-instrumentation.xml"/>
 		<view>
 			<name>Pilot View</name>
 			<internal archive="y">true</internal>

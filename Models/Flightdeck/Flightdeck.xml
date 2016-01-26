@@ -528,8 +528,8 @@
 		<name>AI</name>
 		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/AI/ai.xml</path>
         <offsets>
-    <x-m>2.249</x-m>
-    <y-m>-0.510</y-m>
+    <x-m>2.225</x-m>
+    <y-m>-0.513</y-m>
     <z-m>0.882</z-m>
     <pitch-deg>-12</pitch-deg>
         </offsets>
@@ -539,7 +539,7 @@
 		<name>AI-Copilot</name>
 		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/AI/ai.xml</path>
         <offsets>
-    <x-m>2.249</x-m>
+    <x-m>2.225</x-m>
     <y-m>0.513</y-m>
     <z-m>0.882</z-m>
     <pitch-deg>-12</pitch-deg>

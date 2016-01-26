@@ -398,7 +398,6 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </stall>
-
   </fx>
 
 </PropertyList>
