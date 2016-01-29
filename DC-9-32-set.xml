@@ -20,7 +20,7 @@
 			<splash-texture>Aircraft/DC-9-32/splash.png</splash-texture>
 		</startup>
 		<instrumentation>
-			<path>Aircraft/DC-9-32/Systems/instrumentation.xml</path>
+				<path>Aircraft/DC-9-32/Systems/instrumentation.xml</path>
 		</instrumentation>
 		<systems>
 			<autopilot>
@@ -111,7 +111,7 @@
 					<enabled type="bool">true</enabled>
 
 					<item>
-						<label>QuickStartup<label>
+						<label>QuickStartup</label>
 						<binding>
 							<command>property-toggle</command>
 							<property>sim/model/start-idling</property>
