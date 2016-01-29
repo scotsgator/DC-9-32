@@ -4,7 +4,7 @@
 
 	<sim>
 		<description>Douglas DC-9-32</description>
-		<author>Lester Buffo, Joshua Davidson (it0uchpods, 411)</author>
+		<author>Joshua Davidson, Lester Boffo</author>
 		<status>alpha</status>
 		<flight-model>yasim</flight-model>
 		<aero>DC-9-32</aero>
@@ -32,7 +32,7 @@
 		<sound>
 			<path>Aircraft/DC-9-32/DC-9-sound.xml</path>
 		</sound>
-		<instrumentation include="Systems/init-instrumentation.xml"/>
+
 		<view>
 			<name>Pilot View</name>
 			<internal archive="y">true</internal>
@@ -111,14 +111,14 @@
 					<enabled type="bool">true</enabled>
 
 					<item>
-						<label>QuickStart/label>
+						<label>QuickStartup<label>
 						<binding>
 							<command>property-toggle</command>
 							<property>sim/model/start-idling</property>
 						</binding>
 					</item>
 					<item>
-						<label>Select Livery</label>
+						<label>Livery Select</label>
 						<binding>
 							<command>nasal</command>
 							<script>
