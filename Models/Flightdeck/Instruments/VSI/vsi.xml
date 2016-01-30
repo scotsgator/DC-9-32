@@ -1,92 +1,36 @@
 <?xml version="1.0"?>
-
 <PropertyList>
 
-	<path>vsi.ac</path>
+    <path>vsi.ac</path>
 
+    <animation>
+        <type>material</type>
+        <object-name>VSIface</object-name>
+        <object-name>VSI.needle</object-name>
+<emission>
+    <red>0.3</red>
+    <green>0.3</green>
+    <blue>0.3</blue>
+    <factor-prop>/controls/lighting/pfd-norm</factor-prop>
+  </emission>
+    </animation>
 
-	<animation>
-		<type>rotate</type>
-		<object-name>needle</object-name>
-		<property>/instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
-		<interpolation>
-<entry>
-				<ind>    -500.0</ind>
-				<dep>  -20.0</dep>
-			</entry>
-			<entry>
-				<ind>   -1000.0</ind>
-				<dep>  -40.0</dep>
-			</entry>
-			<entry>
-				<ind>   -1500.0</ind>
-				<dep> -60.0</dep>
-			</entry>
-			<entry>
-				<ind>   -2000.0</ind>
-				<dep> -83.0</dep>
-			</entry>
-            			<entry>
-				<ind>   -3000.0</ind>
-				<dep> -114.0</dep>
-			</entry>
-            			<entry>
-				<ind>   -4000.0</ind>
-				<dep> -142.0</dep>
-			</entry>
-            			<entry>
-				<ind>   -5000.0</ind>
-				<dep> -162.0</dep>
-			</entry>
-                        			<entry>
-				<ind>   -6000.0</ind>
-				<dep> -180.0</dep>
-			</entry>
-
-			<entry>
-				<ind>      0.0</ind>
-				<dep>   0.0</dep>
-			</entry>
-			<entry>
-				<ind>    500.0</ind>
-				<dep>  20.0</dep>
-			</entry>
-			<entry>
-				<ind>   1000.0</ind>
-				<dep>  40.0</dep>
-			</entry>
-			<entry>
-				<ind>   1500.0</ind>
-				<dep> 60.0</dep>
-			</entry>
-			<entry>
-				<ind>   2000.0</ind>
-				<dep> 83.0</dep>
-			</entry>
-            			<entry>
-				<ind>   3000.0</ind>
-				<dep> 114.0</dep>
-			</entry>
-            			<entry>
-				<ind>   4000.0</ind>
-				<dep> 142.0</dep>
-			</entry>
-            			<entry>
-				<ind>   5000.0</ind>
-				<dep> 162.0</dep>
-			</entry>
-                        			<entry>
-				<ind>   6000.0</ind>
-				<dep> 180.0</dep>
-			</entry>
-		</interpolation>
-		<axis>
-			<x>-1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>VSI.needle</object-name>
+        <property>autopilot/internal/vert-speed-fpm</property>
+        <interpolation>
+            <entry><ind>-4000.0</ind><dep>-173.0</dep></entry>
+            <entry><ind>-1000.0</ind><dep>-76.0</dep></entry>
+            <entry><ind>0.0</ind><dep>0.0</dep></entry>
+            <entry><ind>1000.0</ind><dep>76.0</dep></entry>
+            <entry><ind>4000.0</ind><dep>173.0</dep></entry>
+        </interpolation>
+        <axis>
+            <x>-1.0</x>
+            <y>0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
 
 </PropertyList>
-
-

@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-<path>n2.ac</path>
+<path>epr.ac</path>
 
 <animation>
   <type>material</type>
@@ -19,10 +19,11 @@
 <animation>
   <type>rotate</type>
   <object-name>Needle</object-name>
-  <property>/engines/engine[1]/n2</property>
+  <property>/engines/engine[0]/epr</property>
   <interpolation>
     <entry><ind>  0</ind><dep>  0</dep></entry>
-    <entry><ind>106</ind><dep>318</dep></entry>
+    <entry><ind>0.8</ind><dep>  0</dep></entry>
+    <entry><ind>2.5</ind><dep>255</dep></entry>
   </interpolation>
   <axis>
     <x>-1</x>

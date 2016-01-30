@@ -44,56 +44,24 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine1>
-    <rumble>
-      <name>rumble</name>
-      <mode>looped</mode>
-      <path>Sounds/rumble.wav</path>
-      <condition>
-        <property>/gear/gear[0]/wow</property>
-      </condition>
-      <volume>
-        <property>/gear/gear[0]/rollspeed-ms</property>
-        <type>log</type>
-        <factor>0.12</factor>
-      </volume>
-      <pitch>
-        <property>/gear/gear[0]/rollspeed-ms</property>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </rumble>
-
-    <rumble>
-      <name>rumble</name>
-      <mode>looped</mode>
-      <path>Sounds/rumble.wav</path>
-      <condition>
-        <property>/gear/gear[1]/wow</property>
-      </condition>
-      <volume>
-        <property>/gear/gear[1]/rollspeed-ms</property>
-        <type>log</type>
-        <factor>0.12</factor>
-      </volume>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </rumble>
-
-    <rumble>
-      <name>rumble</name>
-      <mode>looped</mode>
-      <path>Sounds/rumble.wav</path>
-      <condition>
-        <property>/gear/gear[2]/wow</property>
-      </condition>
-      <volume>
-        <property>/gear/gear[2]/rollspeed-ms</property>
-        <type>log</type>
-        <factor>0.12</factor>
-      </volume>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </rumble>
+	
+  <rumble>
+   <name>rumble</name>
+   <mode>looped</mode>
+   <path>Sounds/rumble.wav</path>
+   <condition>
+    <or>
+     <property>/gear/gear[0]/wow</property>
+     <property>/gear/gear[1]/wow</property>
+     <property>/gear/gear[2]/wow</property>
+    </or>
+   </condition>
+   <volume>
+    <property>/velocities/groundspeed-kt</property>
+    <type>log</type>
+    <factor>0.35</factor>
+   </volume>
+  </rumble>
 
     <gear>
       <name>gear</name>

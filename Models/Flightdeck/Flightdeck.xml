@@ -560,8 +560,8 @@
 		<name>ClockL</name>
 		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/Clock/clock.xml</path>
         <offsets>
-    <x-m>2.225</x-m>
-    <y-m>-0.73</y-m>
+    <x-m>2.228</x-m>
+    <y-m>-0.75</y-m>
     <z-m>0.876</z-m>
     <pitch-deg>-12</pitch-deg>
         </offsets>
@@ -585,7 +585,7 @@
 		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ASI/asi.xml</path>
         <offsets>
     <x-m>2.225</x-m>
-    <y-m>-0.62</y-m>
+    <y-m>-0.64</y-m>
     <z-m>0.876</z-m>
     <pitch-deg>-12</pitch-deg>
         </offsets>
@@ -596,53 +596,30 @@
 		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ASI/asi.xml</path>
         <offsets>
     <x-m>2.225</x-m>
-    <y-m>0.40</y-m>
+    <y-m>0.39</y-m>
     <z-m>0.876</z-m>
     <pitch-deg>-12</pitch-deg>
         </offsets>
 	</model>
-
-        <model>
-		<name>vor</name>
-		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/vor/vor.xml</path>
-        <offsets>
-    <x-m>1.73</x-m>
-    <y-m>-0.475</y-m>
-    <z-m>0.61</z-m>
-    <pitch-deg>-12</pitch-deg>
-        </offsets>
-	</model> 
-    
-
-        	<model>
-		<name>ADFcopilot</name>
-		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/vor/vor.xml</path>
-        <offsets>
-    <x-m>1.73</x-m>
-    <y-m>0.31</y-m>
-    <z-m>0.61</z-m>
-    <pitch-deg>-12</pitch-deg>
-        </offsets>
-	</model>
     
         	<model>
-		<name>ILS</name>
-		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ILS/VOR_LOC.xml</path>
+		<name>rmi</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/rmi/rmi.xml</path>
         <offsets>
-    <x-m>2.265</x-m>
-    <y-m>-0.62</y-m>
-    <z-m>0.71</z-m>
+    <x-m>2.252</x-m>
+    <y-m>-0.63</y-m>
+    <z-m>0.76</z-m>
     <pitch-deg>-12</pitch-deg>
         </offsets>
 	</model>
     
     	<model>
-		<name>ILScopilot</name>
-		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ILS/VOR_LOC.xml</path>
+		<name>rmicopilot</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/rmi/rmi.xml</path>
         <offsets>
-    <x-m>2.265</x-m>
-    <y-m>0.40</y-m>
-    <z-m>0.71</z-m>
+    <x-m>2.252</x-m>
+    <y-m>0.398</y-m>
+    <z-m>0.76</z-m>
     <pitch-deg>-12</pitch-deg>
         </offsets>
 	</model>
@@ -652,7 +629,7 @@
 		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ALT/alt.xml</path>
         <offsets>
     <x-m>2.226</x-m>
-    <y-m>0.613</y-m>
+    <y-m>0.619</y-m>
     <z-m>0.876</z-m>
     <pitch-deg>-12</pitch-deg>
         </offsets>
@@ -662,40 +639,20 @@
 		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ALT/alt.xml</path>
         <offsets>
     <x-m>2.226</x-m>
-    <y-m>-0.407</y-m>
+    <y-m>-0.404</y-m>
     <z-m>0.876</z-m>
     <pitch-deg>-12</pitch-deg>
         </offsets>
 	</model>
-    
-        	<model>
-		<name>Alt-Copilot</name>
-		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ralt/ralt.xml</path>
-        <offsets>
-    <x-m>2.226</x-m>
-    <y-m>0.69</y-m>
-    <z-m>0.876</z-m>
-    <pitch-deg>-12</pitch-deg>
-        </offsets>
-	</model>
-    	<model>
-		<name>RALT</name>
-		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/ralt/ralt.xml</path>
-        <offsets>
-    <x-m>2.226</x-m>
-    <y-m>-0.33</y-m>
-    <z-m>0.876</z-m>
-    <pitch-deg>-12</pitch-deg>
-        </offsets>
-	</model>
+ 
     
         	<model>
 		<name>VSI-Copilot</name>
 		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/VSI/vsi.xml</path>
         <offsets>
-    <x-m>2.245</x-m>
-    <y-m>0.61</y-m>
-    <z-m>0.795</z-m>
+    <x-m>2.252</x-m>
+    <y-m>0.619</y-m>
+    <z-m>0.76</z-m>
     <pitch-deg>-12</pitch-deg>
         </offsets>
 	</model>
@@ -704,20 +661,20 @@
 		<name>VSI</name>
 		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/VSI/vsi.xml</path>
         <offsets>
-    <x-m>2.245</x-m>
-    <y-m>-0.407</y-m>
-    <z-m>0.795</z-m>
+    <x-m>2.252</x-m>
+    <y-m>-0.404</y-m>
+    <z-m>0.76</z-m>
     <pitch-deg>-12</pitch-deg>
         </offsets>
 	</model>
     
         	<model>
-		<name>TCAS</name>
-		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/TCAS/tcas.xml</path>
+		<name>dimmer</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/dimmer/efis_dimmer.xml</path>
         <offsets>
-    <x-m>2.26</x-m>
-    <y-m>-0.407</y-m>
-    <z-m>0.71</z-m>
+    <x-m>2.226</x-m>
+    <y-m>-0.332</y-m>
+    <z-m>0.876</z-m>
     <pitch-deg>-12</pitch-deg>
         </offsets>
 	</model>
@@ -788,7 +745,7 @@
 		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/Flaps/flaps.xml</path>
         <offsets>
     <x-m>2.247</x-m>
-    <y-m>0.095</y-m>
+    <y-m>0.11</y-m>
     <z-m>0.788</z-m>
     <pitch-deg>-12</pitch-deg>
         </offsets>
@@ -805,8 +762,27 @@
     <pitch-deg>-12</pitch-deg>
         </offsets>
 	</model>
-    
-            	<model>
+	<model>
+		<name>eprL</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/epr/eprL.xml</path>
+        <offsets>
+    <x-m>2.22</x-m>
+    <y-m>-0.0345</y-m>
+    <z-m>0.97</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+	<model>
+		<name>eprR</name>
+		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/epr/eprR.xml</path>
+        <offsets>
+    <x-m>2.22</x-m>
+    <y-m>0.035</y-m>
+    <z-m>0.97</z-m>
+    <pitch-deg>-12</pitch-deg>
+        </offsets>
+	</model>
+            	<!--model>
 		<name>EPR2</name>
 		<path>Aircraft/DC-9-32/Models/Flightdeck/Instruments/oilpressure/oilpressureL.xml</path>
         <offsets>
@@ -848,7 +824,7 @@
     <z-m>0.908</z-m>
     <pitch-deg>-12</pitch-deg>
         </offsets>
-	</model>
+	</model-->
     
     <model>
 		<name>Radar</name>
