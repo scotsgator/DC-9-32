@@ -6,7 +6,7 @@
 
     <engine0>
       <name>whine</name>
-      <path>Aircraft/DC-9-32/Sounds/running.wav</path>
+      <path>Sounds/running.wav</path>
       <mode>looped</mode>
       <condition>
         <property>/engines/engine[0]/running</property>
@@ -26,7 +26,7 @@
     </engine0>
 	<engine1>
       <name>whine</name>
-      <path>Aircraft/DC-9-32/Sounds/running.wav</path>
+      <path>Sounds/running.wav</path>
       <mode>looped</mode>
       <condition>
         <property>/engines/engine[1]/running</property>
@@ -66,7 +66,7 @@
     <gear>
       <name>gear</name>
       <mode>in-transit</mode>
-      <path>Aircraft/DC-9-32/Sounds/gear.wav</path>
+      <path>Sounds/gear.wav</path>
       <property>/gear/gear[0]/position-norm</property>
       <pitch>
         <internal>dt_play</internal>
@@ -106,7 +106,7 @@
     <gear>
       <name>gear</name>
       <mode>in-transit</mode>
-      <path>Aircraft/DC-9-32/Sounds/gear.wav</path>
+      <path>Sounds/gear.wav</path>
       <property>/gear/gear[1]/position-norm</property>
       <pitch>
         <internal>dt_play</internal>
@@ -146,7 +146,7 @@
     <gear>
       <name>gear</name>
       <mode>in-transit</mode>
-      <path>Aircraft/DC-9-32/Sounds/gear.wav</path>
+      <path>Sounds/gear.wav</path>
       <property>/gear/gear[2]/position-norm</property>
       <pitch>
         <internal>dt_play</internal>
@@ -185,7 +185,7 @@
 
     <squeal>
       <name>squeal</name>
-      <path>Aircraft/DC-9-32/Sounds/touch.wav</path>
+      <path>Sounds/touch.wav</path>
       <condition>
         <property>/gear/gear[0]/wow</property>
       </condition>
@@ -213,7 +213,7 @@
 
     <squeal>
       <name>squeal</name>
-      <path>Aircraft/DC-9-32/Sounds/touch.wav</path>
+      <path>Sounds/touch.wav</path>
       <condition>
         <property>/gear/gear[1]/wow</property>
       </condition>
@@ -241,7 +241,7 @@
 
     <squeal>
       <name>squeal</name>
-      <path>Aircraft/DC-9-32/Sounds/touch.wav</path>
+      <path>Sounds/touch.wav</path>
       <condition>
         <property>/gear/gear[2]/wow</property>
       </condition>
@@ -288,7 +288,7 @@
     <spoiler>
       <name>spoilers</name>
       <mode>in-transit</mode>
-      <path>Aircraft/DC-9-32/Sounds/Sounds/flap.wav</path>
+      <path>Sounds/flap.wav</path>
       <property>/surface-positions/left-lower-spoiler-pos-norm</property>
       <volume>
         <factor>0.15</factor>
@@ -300,7 +300,7 @@
     <spoiler>
       <name>spoilers</name>
       <mode>in-transit</mode>
-      <path>Aircraft/DC-9-32/Sounds/Sounds/flap.wav</path>
+      <path>Sounds/flap.wav</path>
       <property>/surface-positions/left-upper-spoiler-pos-norm</property>
       <volume>
         <factor>0.15</factor>
@@ -312,7 +312,7 @@
     <spoiler>
       <name>spoilers</name>
       <mode>in-transit</mode>
-      <path>Aircraft/DC-9-32/Sounds/Sounds/flap.wav</path>
+      <path>Sounds/flap.wav</path>
       <property>/surface-positions/right-lower-spoiler-pos-norm</property>
       <volume>
         <factor>0.25</factor>
@@ -324,7 +324,7 @@
     <spoiler>
       <name>spoilers</name>
       <mode>in-transit</mode>
-      <path>Aircraft/DC-9-32/Sounds/Sounds/flap.wav</path>
+      <path>Sounds/flap.wav</path>
       <property>/surface-positions/right-upper-spoiler-pos-norm</property>
       <volume>
         <factor>0.25</factor>
