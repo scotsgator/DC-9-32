@@ -9,8 +9,8 @@ aircraft.livery.init("Aircraft/DC-9-32/Models/Liveries");
 ## ALS LANDING LIGHTS
 ##########
 
-setprop("sim/rendering/als-secondary-lights/use-landing-light",1"
-setprop("sim/rendering/als-secondary-lights/use-alt-landing-light",1"
+setprop("/sim/rendering/als-secondary-lights/use-landing-light", 1");
+setprop("/sim/rendering/als-secondary-lights/use-alt-landing-light", 1");
 
 ## ENGINES
 ##########
