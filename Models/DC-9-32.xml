@@ -347,9 +347,34 @@
 		<object-name>Fuselage</object-name>
 		<object-name>EngineL</object-name>
 		<object-name>EngineR</object-name>
+		<object-name>Wings</object-name>
+		<object-name>Hstabs</object-name>
+		<object-name>EngFanDiskR</object-name>
+		<object-name>EngFanDiskL</object-name>
+		<object-name>ElevatorL</object-name>
+		<object-name>ElevatorR</object-name>
 		<property-base>sim/model/livery</property-base>
 		<texture-prop>texture</texture-prop>
 		<texture>DAL.png</texture>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>FlapDoorL</object-name>
+		<object-name>FlapDoorR</object-name>
+		<object-name>LGDoorOutR</object-name>
+		<object-name>LGDoorOutL</object-name>
+		<object-name>Strake</object-name>
+		<object-name>EngMounts</object-name>
+		<object-name>EngMounts.001</object-name>
+		<object-name>StrakeEng</object-name>
+		<object-name>StrakeEng.001</object-name>
+		<object-name>EngRevFrameR</object-name>
+		<object-name>EngRevFrameL</object-name>
+		<object-name>BeaconMount</object-name>
+		<property-base>sim/model/livery</property-base>
+		<texture-prop>texture2</texture-prop>
+		<texture>externalparts.png</texture>
 	</animation>
 
     <!--
