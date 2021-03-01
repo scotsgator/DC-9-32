@@ -6,6 +6,7 @@
 			<livery>
 				<name>Delta Airlines</name>
 				<texture>DAL.png</texture>
+				<texture2>extraparts.png</texture2>
 			</livery>
 		</model>
 	</sim>

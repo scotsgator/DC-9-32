@@ -6,6 +6,7 @@
 			<livery>
 				<name>Playboy "Black Bunny"</name>
 				<texture>BB.png</texture>
+				<texture2>externalpartsBB.png</texture2>
 			</livery>
 		</model>
 	</sim>
